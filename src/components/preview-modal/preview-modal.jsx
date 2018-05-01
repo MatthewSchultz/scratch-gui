@@ -35,7 +35,7 @@ const PreviewModal = ({intl, ...props}) => (
             </h2>
             <p>
                 <FormattedMessage
-                    defaultMessage="We're working on the next generation of Scratch. We're excited for you to try it!"
+                    defaultMessage="Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab, and is copyrighted by MIT and released under an open-source license. MIT has no relationship, including endorsment or sponsorship, with Afterschool Enrichment Solutions."
                     description="Invitation to try 3.0 preview"
                     id="gui.previewInfo.invitation"
                 />
@@ -47,7 +47,7 @@ const PreviewModal = ({intl, ...props}) => (
                     onClick={props.onCancel}
                 >
                     <FormattedMessage
-                        defaultMessage="Not Now"
+                        defaultMessage="Go to MIT Scratch"
                         description="Label for button to back out of trying Scratch 3.0 preview"
                         id="gui.previewInfo.notnow"
                     />
@@ -58,17 +58,9 @@ const PreviewModal = ({intl, ...props}) => (
                     onClick={props.onTryIt}
                 >
                     <FormattedMessage
-                        defaultMessage="Try It! {caticon}"
+                        defaultMessage="Start your Project"
                         description="Label for button to try Scratch 3.0 preview"
                         id="gui.previewModal.tryit"
-                        values={{
-                            caticon: (
-                                <img
-                                    className={styles.catIcon}
-                                    src={catIcon}
-                                />
-                            )
-                        }}
                     />
                 </button>
                 <button
