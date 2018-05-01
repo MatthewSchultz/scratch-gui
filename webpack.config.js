@@ -16,7 +16,8 @@ const base = {
     devServer: {
         contentBase: path.resolve(__dirname, 'build'),
         host: '0.0.0.0',
-        port: process.env.PORT || 8601
+        port: process.env.PORT || 80,
+        disableHostCheck: true
     },
     output: {
         library: 'GUI',
@@ -168,7 +169,7 @@ module.exports = [
             module: {
                 rules: base.module.rules.concat([
                     {
-                      
+
                         test: /\.(svg|png|wav|gif|jpg)$/,
                         loader: 'file-loader',
                         options: {
