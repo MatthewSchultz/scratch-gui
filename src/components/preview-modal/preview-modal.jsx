@@ -42,6 +42,7 @@ const PreviewModal = ({intl, ...props}) => (
             </p>
 
             <Box className={styles.buttonRow}>
+                {/*
                 <button
                     className={styles.noButton}
                     onClick={props.onCancel}
@@ -52,6 +53,7 @@ const PreviewModal = ({intl, ...props}) => (
                         id="gui.previewInfo.notnow"
                     />
                 </button>
+                */}
                 <button
                     className={styles.okButton}
                     title="tryit"
@@ -63,6 +65,7 @@ const PreviewModal = ({intl, ...props}) => (
                         id="gui.previewModal.tryit"
                     />
                 </button>
+                {/*
                 <button
                     className={styles.viewProjectButton}
                     title="viewproject"
@@ -74,7 +77,9 @@ const PreviewModal = ({intl, ...props}) => (
                         id="gui.previewModal.viewproject"
                     />
                 </button>
+                */}
             </Box>
+            {/*
             <Box className={styles.faqLinkText}>
                 <FormattedMessage
                     defaultMessage="To learn more, go to the {previewFaqLink}."
@@ -94,8 +99,9 @@ const PreviewModal = ({intl, ...props}) => (
                             </a>
                         )
                     }}
-                />
+                />  
             </Box>
+            */}
         </Box>
     </ReactModal>
 );
